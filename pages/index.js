@@ -1,15 +1,17 @@
 import Head from 'next/head'
+import Hero from '../components/Hero'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center  py-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
+      <main className="flex w-full ">
+        <Hero />
+        {/* <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
             Next.js!
@@ -64,8 +66,9 @@ export default function Home() {
             </p>
           </a>
         </div>
+       */}
       </main>
-
+{/*
       <footer className="flex items-center justify-center w-full h-24 border-t">
         <a
           className="flex items-center justify-center"
@@ -77,6 +80,7 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
       </footer>
+     */}
     </div>
   )
 }
