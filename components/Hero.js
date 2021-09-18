@@ -3,25 +3,27 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex flex-row max-w-screen-2xl items-center  m-auto h-screen">
-      <div className="flex-1  px-9 md:px-4 xl:pl-0">
+    <section class="mx-auto max-w-6xl py-12">
+
+      <div className="flex flex-col  mx-9 m-auto">
         <div className="flex flex-row justify-center lg:hidden">
           <Image
             className="rounded-full"
             src="/arquimedes.jpeg"
             alt="arquimedes profile"
-            height="150"
-            width="150"
-
+            height="80"
+            width="80"
           />
         </div>
+
+
+
         <h2 className="text-yellow-300 text-2xl tracking-wide uppercase font-semibold my-3">
           Hello, I&apos;m Arquimedes
         </h2>
 
         <h1 className=" text-7xl text-gray-800 leading-extra-loose font-black">
-          I&apos;m a Senior Software Enginneer from Venezuela, based in
-          Panama.
+          I&apos;m a Senior Software Enginneer from Venezuela.
         </h1>
         <p className="text-3xl text-gray-800 leading-extra-loose font-medium my-6">
           I create well tested and <strong>high-quality software</strong>. Currently in an
@@ -48,6 +50,6 @@ export default function Hero() {
 
         />
       </div>
-    </div>
+    </section>
   );
 }
